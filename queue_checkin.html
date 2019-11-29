@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BankQUEUE - Check In </title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="body" class="container">
+        <div class="check_in_header">
+            <h1>Check in</h1>
+        </div>
+        <div class="form">
+            <form method="post" action="queue_success2.php" name="customer_form"
+                onsubmit="return validateCustomerInfo()">
+                <label for="customer_name">Name</label>
+                <p>
+                    <input type="text" name="customer_name" id="customer_name" placeholder="Full Name" size="30" />
+                </p>
+                <label for="party_size">Party Size</label>
+                <p>
+                    <select name="party_size" id="party_size">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8+">8+</option>
+                    </select>
+                </p>
+                <label>Phone Number</label>
+                <p>
+                    <input type="number" name="phone_number" id="phone_number" placeholder="Numbers Only" size="11" />
+                </p>
+                <p>
+                    <div class="seating_container">
+                        <label>Withdrawal or Deposit?</label>
+                        <p>
+                            <label class="radio">
+                                <input type="radio" name="seating_choice" value="T">
+                                Withdrawal
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="seating_choice" value="B">
+                                Deposit
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="seating_choice" value="E">
+                                Both
+                            </label>
+                    </div> <!-- seating container ends-->
+                </p>
+                </p>
+                <input type="submit" name="submit" value="Submit" />
+            </form>
+        </div> <!-- form container ends -->
+    </div> <!-- full body container ends -->
+
+</body>
+
+<footer>
+    <div class="copyright">
+        Copyright. All Rights Reserved by 
+        Chika
+    </div>
+</footer>
+
+</html>
